@@ -1,5 +1,5 @@
-# orthocal-python
-Orthocal Rewritten in Python
+# northocal-python
+Orthocal Rewritten in Python for Norwegian
 
 ## For Docker Development
 
