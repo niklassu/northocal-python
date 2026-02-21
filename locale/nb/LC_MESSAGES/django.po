@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-21 06:32-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: orthocal/settings.py:224
+msgid "English"
+msgstr ""
+
+#: orthocal/settings.py:225
+msgid "Romanian"
+msgstr ""
+
+#: orthocal/settings.py:226
+msgid "Serbian"
+msgstr ""
+
+#: orthocal/templates/base.html:6
+msgid "Orthodox Daily Readings"
+msgstr "Ortodokse daglige lesninger"
+
+#: orthocal/templates/base.html:54
+msgid "Daily Readings"
+msgstr "Daglige lesninger"
+
+#: orthocal/templates/base.html:55
+msgid "Calendar"
+msgstr "Kalender"
+
+#: orthocal/templates/base.html:59
+msgid "About"
+msgstr "Om"

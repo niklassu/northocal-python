@@ -3,13 +3,13 @@
     <head>
 		{% load static %}
 		<!-- Site meta data -->
-        <title>{% block title %}Orthodox Daily Readings{% endblock %}</title>
+        <title>{% block title %}{% trans "Orthodox Daily Readings" %}{% endblock %}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Load Styles -->
-		<link rel="preload" href="{% static "main.css" %}" as="style">
-		<link rel="stylesheet" href="{% static "main.css" %}">
+		<link rel="preload" href="{% static "main.dark.css" %}" as="style">
+		<link rel="stylesheet" href="{% static "main.dark.css" %}">
 		<link rel="stylesheet" media="print" href="{% static "print.css" %}">
 
 		<!-- Load Fonts -->
@@ -47,16 +47,16 @@
 		{% block head %}{% endblock %}
     </head>
     <body>
-		<header><a href="/"><span class="rubric">O</span>rthodox <span class="rubric">C</span>alendar</a></header>
+		<header><a href="/"><span class="rubric">O</span>rtodoks <span class="rubric">K</span>alender</a></header>
 
 		<nav>
 			<ul>
-				<li><a href="{% url "index" %}">Daily Readings</a></li>
-				<li><a href="{% url "calendar-default" %}">Calendar</a></li>
+				<li><a href="{% url "index" %}">{% trans "Daily Readings" %}</a></li>
+				<li><a href="{% url "calendar-default" %}">{% trans "Calendar" %}</a></li>
 				<li><a href="{% url "alexa" %}">Alexa</a></li>
 				<li><a href="{% url "api" %}">API</a></li>
 				<li><a href="{% url "feeds" %}">Feeds</a></li>
-				<li><a href="{% url "about" %}">About</a></li>
+				<li><a href="{% url "about" %}">{% trans "About" %}</a></li>
 			</ul>
 
 			{% block extra_nav %}{% endblock %}
