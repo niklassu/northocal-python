@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load typogrify_tags %}
 {% load fullurl %}
+{% load i18n %}
 
 {% block title %}{% if request.resolver_match.url_name == "index" %}Orthodox Daily Scripture Readings and Lives of the Saints{% else %}Orthodox Daily Readings for {{ day.gregorian_date|date:"F j, Y" }}{% endif %}{% endblock %}
 
@@ -19,14 +20,14 @@
 {% endblock %}
 
 {% block extra_nav %}
-	<a class="cal-nav" href="{% url "readings" cal=cal year=previous_date.year month=previous_date.month day=previous_date.day %}" {% if previous_nofollow %}rel="nofollow"{% endif %}>&larr; Previous Day</a>
-	<a class="cal-nav" href="{% url "index" %}">Today</a>
-	<a class="cal-nav" href="{% url "readings" cal=cal year=next_date.year month=next_date.month day=next_date.day %}" {% if next_nofollow %}rel="nofollow"{% endif %}>Next Day &rarr;</a>
+	<a class="cal-nav" href="{% url "readings" cal=cal year=previous_date.year month=previous_date.month day=previous_date.day %}" {% if previous_nofollow %}rel="nofollow"{% endif %}>&larr; {% trans "Previous Day" %}</a>
+	<a class="cal-nav" href="{% url "index" %}">{% trans "Today" %}</a>
+	<a class="cal-nav" href="{% url "readings" cal=cal year=next_date.year month=next_date.month day=next_date.day %}" {% if next_nofollow %}rel="nofollow"{% endif %}>{% trans "Next Day" %} &rarr;</a>
 
 	<br>
 
-	<label><input type="radio" name="calendar" value="gregorian" {% if cal == "gregorian" %}checked=""{% endif %}>Gregorian</label>
-	<label><input type="radio" name="calendar" value="julian" {% if cal == "julian" %}checked=""{% endif %}>Julian</label>
+	<label><input type="radio" name="calendar" value="gregorian" {% if cal == "gregorian" %}checked=""{% endif %}>{% trans "Gregorian" %}</label>
+	<label><input type="radio" name="calendar" value="julian" {% if cal == "julian" %}checked=""{% endif %}>{% trans "Julian" %}</label>
 {% endblock %}
 
 {% block main %}
@@ -42,7 +43,7 @@
 
 		{% if day.service_notes %}
 		<section class="service-notes">
-			<h2>Service Notes</h2>
+			<h2>{% trans "Service Notes" %}</h2>
 			<ul>
 				{% for note in day.service_notes %}
 				<li>{{ note|widont }}</li>
@@ -53,7 +54,7 @@
 
 		{% if day.feasts %}
 		<section class="feasts">
-			<h2>Feasts</h2>
+			<h2>{% trans "Feasts" %}</h2>
 			<ul>
 				{% for feast in day.feasts %}
 				<li>{{ feast|widont }}</li>
@@ -64,7 +65,7 @@
 
 		{% if day.saints %}
 		<section class="commemorations">
-			<h2>Commemorations</h2>
+			<h2>{% trans "Commemorations" %}</h2>
 			<ul>
 				{% for saint in day.saints %}
 				<li>{{ saint|widont }}</li>
