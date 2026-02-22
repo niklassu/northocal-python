@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 06:32-0800\n"
+"POT-Creation-Date: 2026-02-22 07:16-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: calendarium/templates/readings.html:23
+msgid "Previous Day"
+msgstr "Forrige dag"
+
+#: calendarium/templates/readings.html:24
+msgid "Today"
+msgstr "I dag"
+
+#: calendarium/templates/readings.html:25
+msgid "Next Day"
+msgstr "Neste dag"
+
+#: calendarium/templates/readings.html:29
+msgid "Gregorian"
+msgstr "Gregoriansk"
+
+#: calendarium/templates/readings.html:30
+msgid "Julian"
+msgstr "Juliansk"
+
+#: calendarium/templates/readings.html:46
+msgid "Service Notes"
+msgstr "Liturgiske merknader"
+
+#: calendarium/templates/readings.html:57
+msgid "Feasts"
+msgstr "Fester"
+
+#: calendarium/templates/readings.html:68
+msgid "Commemorations"
+msgstr "Minnes i dag"
 
 #: orthocal/settings.py:224
 msgid "English"

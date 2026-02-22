@@ -30,40 +30,40 @@ class FastLevels(IntEnum):
     NativityFast   = 5
 
 FastLevelDesc = (
-    "No Fast",
-    "Fast",
-    "Lenten Fast",
-    "Apostles Fast",
-    "Dormition Fast",
-    "Nativity Fast",
+    "Ingen faste",
+    "Faste",
+    "Den store fasten",
+    "Apostelfasten",
+    "Hensovnelesfasten",
+    "Julefasten",
 )
 
 FastExceptions = (
     '',
-    "Wine and Oil are Allowed",
-    "Fish, Wine and Oil are Allowed",
-    "Wine and Oil are Allowed",
-    "Fish, Wine and Oil are Allowed",
-    "Wine is Allowed",
-    "Wine, Oil and Caviar are Allowed",
-    "Meat Fast",
-    "Strict Fast (Wine and Oil)",
-    "Strict Fast",
-    "No overrides",
-    "Fast Free",
+    "Vin og olje er tillatt",
+    "Fisk, vin og olje er tillatt",
+    "Vin og olje er tillatt",
+    "Fisk, vin og olje er tillatt",
+    "Vin er tillatt",
+    "Vin, olje og kaviar er tillatt",
+    "Kjøttfaste",
+    "Streng faste (vin og olje)",
+    "Streng faste",
+    "Ingen overstyring",
+    "Fastefri",
 )
 
 FeastLevels = {
-	-1: "No Liturgy",
-	0:  "Liturgy",
-	1:  "Presanctified",
+	-1: "Ingen liturgi",
+	0:  "Liturgi",
+	1:  "Forutviede gaver",
 	2:  "Black squigg (6-stich typikon symbol)",
 	3:  "Red squigg (doxology typikon symbol)",
 	4:  "Red cross (polyeleos typikon symbol)",
 	5:  "Red cross half-circle (vigil typikon symbol)",
 	6:  "Red cross circle (great feast typikon symbol)",
-	7:  "Major feast Theotokos",
-	8:  "Major feast Lord",
+	7:  "Stor fest for Guds mor",
+	8:  "Stor fest for Herren",
 }
 
 class FloatIndex(IntEnum):
